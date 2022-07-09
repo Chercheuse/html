@@ -115,23 +115,24 @@
 }
 
 .main__contacts {
-    padding: 100px 0 40px 0;
+    padding: 95px 0 40px 0;
     background-color: #0a0c0d !important;
     border: #0a0c0d;
     display: grid;
-    grid-template-columns: auto;
+    grid-template-columns: 1fr 1fr;
     width: 100%;
+    padding: 0 32px;
 }
 
 .contacts__details {
-    margin: 30px 0 0;
-    padding: 0 15px;
+    padding: 95px 0 40px;
+
 }
 
 .contacts__title {
     color: #d62324;
     font-family: 'homemade apple';
-    font-size: 26px;
+    font-size: 20px;
     margin: 0;
     text-align: left;
     letter-spacing: 0.5em;
@@ -140,47 +141,142 @@
 .contacts__subtitle {
     color: #FFFFFF;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 56px;
+    font-size: 47px;
     text-align: left;
     margin: 0;
-    padding-bottom: 20px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+    height: 60px;
+    padding:0 0 16px;
+
 }
 
 .contacts__subtitle::after {
     content: "";
     width: 50px;
     height: 2px;
-    display: block;
     position: relative;
     background-color: #d62324;
     bottom: 45%;
     justify-content: flex-start;
     margin-top: 20px;
-    display: block
+    display: block;
 }
 
-.contacts__introduction-phrase {
-    font-family: 'Roboto';
+p.contacts__introduction-phrase {
+    font-family: 'Roboto' sans-serif;
     font-size: 18px;
     text-align: left;
-    margin: 0;
-    padding-bottom: 25px;
+    color: #FFFFFF;
+    padding: 25px 0;
+}
+
+
+
+
+
+
+.contacts__text-address {
+    color: #FFFFFF;
+    font-family: 'Radjhani' sans-serif;
+    font-size: 23px;
+    margin: 0 0 5px;
+    padding: 8px 23px 8px 0;
+}
+
+.contacts__text-contact {
+    color: #FFFFFF;
+    font-family: 'Radjhani' sans-serif;
+    font-size: 23px;
+    margin: 0 0 5px;
+    padding: 8px 15px 0 0;
+}
+
+a .contacts__link {
+    font-family: 'Roboto', sans-serif !important;
+    display: flex;
+    flex-direction: column;
+
+}
+
+a {
     color: #FFFFFF;
 }
 
-.contacts__form {
+.contacts__link {
+    padding: 8px 0 0 15px;
+}
+
+.contacts__address {
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif !important;
+    padding: 8px 0 8px;
+    display: flex;
+    flex-direction: row;
+}
+
+address {
+    padding: 8px 0 8px 15px;
+}
+
+
+.contacts__map {
+    grid-column-start: 1;
+    width: 1fr;
+    padding-top: 10px;
+}
+
+.cotacts__container-form {
+    padding: 95px 0 40px;
+
+}
+
+.container-form__inner {
     background-color: rgb(30, 25, 23);
 }
 
-
-.contacts__text{ 
-color:#FFFFFF;
-font-family: 'roboto' sans-serif;
-text-align: left;
+.contacts__form {
+    grid-column-start: 2;
+    display: flex;
+    flex-direction: column;
 }
-.contacts__link{color:#FFFFFF;
-    font-family: 'roboto' sans-serif;
-position: relative;
-left:150px;
-top: -5px;
+
+.form__user-name,
+.form__user-number,
+.form__user-email,
+.form__date-picker {
+    margin: 12px 0 0;
+    padding: 20px 50px;
+    width: 252px;
+    display: flex;
+    position: relative;
+    left: 111px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(241, 237, 225, 0.11);
+    background-color: rgb(30, 25, 23);
+    color: #FFFFFF8A;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.form__button {
+    background-color: #d62324;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    left: 111px;
+    border-style: solid;
+    border-width: 2px;
+    width: 252px;
+    height: 58;
+    padding: 20px 50px;
+    margin: 86px 0 110px;
+    border-color: #d62324;
+}
+
+.form__user-name {
+    margin-top: 100px;
 }
