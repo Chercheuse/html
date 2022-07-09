@@ -120,11 +120,10 @@
     
 
 }
-
+.contacts__container{padding:0 40px;}
 .contacts__inner {
     display: flex;
     width: calc(100% + 30px);
-    padding: 0 32px;
     flex-wrap: wrap;
     margin: -30px -15px 0;
     background-color: #0a0c0d;
@@ -228,7 +227,7 @@ address {
 
 .contacts__map {
     display:flex;
-    height: 255px;
+    height: 100%;
     width: 100%;
     margin-top: 20px;
 }
@@ -255,6 +254,7 @@ address {
 .form__user-email,
 .form__date-picker {
     display: block;
+
     border-style: solid;
     border-width: 2px;
     border-color: rgba(241, 237, 225, 0.11);
