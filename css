@@ -114,19 +114,30 @@
     color: #d62324;
 }
 
-.main__contacts {
-    padding: 95px 0 40px 0;
-    background-color: #0a0c0d !important;
-    border: #0a0c0d;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
+.contacts {
+    padding: 100px 0 40px;
+    background-color: #0a0c0d;
+    
+
+}
+
+.contacts__inner {
+    display: flex;
+    width: calc(100% + 30px);
     padding: 0 32px;
+    flex-wrap: wrap;
+    margin: -30px -15px 0;
+    background-color: #0a0c0d;
+    flex-direction:row;
 }
 
 .contacts__details {
-    padding: 95px 0 40px;
-
+    padding: 0 15px;
+    margin-top: 30px;
+    display: flex;
+    flex-basis: 50%;
+    max-width: 50%;
+    flex-direction: column;
 }
 
 .contacts__title {
@@ -147,7 +158,7 @@
     grid-column-start: 1;
     grid-row-start: 2;
     height: 60px;
-    padding:0 0 16px;
+    padding: 0 0 16px;
 
 }
 
@@ -171,11 +182,6 @@ p.contacts__introduction-phrase {
     padding: 25px 0;
 }
 
-
-
-
-
-
 .contacts__text-address {
     color: #FFFFFF;
     font-family: 'Radjhani' sans-serif;
@@ -193,9 +199,9 @@ p.contacts__introduction-phrase {
 }
 
 a .contacts__link {
-    font-family: 'Roboto', sans-serif !important;
+    font-family: 'Roboto', sans-serif;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 
 }
 
@@ -209,10 +215,10 @@ a {
 
 .contacts__address {
     color: #FFFFFF;
-    font-family: 'Roboto', sans-serif !important;
-    padding: 8px 0 8px;
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
+    margin-top:20px;
 }
 
 address {
@@ -221,36 +227,34 @@ address {
 
 
 .contacts__map {
-    grid-column-start: 1;
-    width: 1fr;
-    padding-top: 10px;
-}
-
-.cotacts__container-form {
-    padding: 95px 0 40px;
-
-}
-
-.container-form__inner {
-    background-color: rgb(30, 25, 23);
+    display:flex;
+    height: 255px;
+    width: 100%;
+    margin-top: 20px;
 }
 
 .contacts__form {
-    grid-column-start: 2;
+    padding: 0 15px;
+    margin-top: 30px;
     display: flex;
-    flex-direction: column;
+    flex-basis: 50%;
+    max-width: 50%;
+    background-color:rgb(30, 25, 23);
 }
+
+
+.form__inner{ display:block;
+    position:absolute;
+    margin: 0;
+    padding:0;
+}
+
 
 .form__user-name,
 .form__user-number,
 .form__user-email,
 .form__date-picker {
-    margin: 12px 0 0;
-    padding: 20px 50px;
-    width: 252px;
-    display: flex;
-    position: relative;
-    left: 111px;
+    display: block;
     border-style: solid;
     border-width: 2px;
     border-color: rgba(241, 237, 225, 0.11);
@@ -258,7 +262,10 @@ address {
     color: #FFFFFF8A;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
-
+    margin-top: 12px;
+    padding: 20px 50px;
+    width:100%;
+    line-height: 15px;
 }
 
 .form__button {
@@ -266,17 +273,11 @@ address {
     color: #FFFFFF;
     font-size: 12px;
     font-family: 'Roboto', sans-serif;
-    position: relative;
-    left: 111px;
+
     border-style: solid;
     border-width: 2px;
-    width: 252px;
-    height: 58;
+    display: block;
     padding: 20px 50px;
-    margin: 86px 0 110px;
+    width: 100%;
     border-color: #d62324;
-}
-
-.form__user-name {
-    margin-top: 100px;
 }
