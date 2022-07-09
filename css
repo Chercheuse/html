@@ -230,6 +230,7 @@ address {
     height: 100%;
     width: 100%;
     margin-top: 20px;
+    cursor:grabbing;
 }
 
 .contacts__form {
@@ -254,7 +255,6 @@ address {
 .form__user-email,
 .form__date-picker {
     display: block;
-
     border-style: solid;
     border-width: 2px;
     border-color: rgba(241, 237, 225, 0.11);
@@ -272,7 +272,8 @@ address {
     background-color: #d62324;
     color: #FFFFFF;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto' sans-serif;
+    margin: auto;
 
     border-style: solid;
     border-width: 2px;
@@ -280,4 +281,11 @@ address {
     padding: 20px 50px;
     width: 100%;
     border-color: #d62324;
+}
+
+svg {color:rgba(255, 255, 255, 0.54);
+    cursor: pointer;
+    display: flex;
+    z-index: 1;
+
 }
