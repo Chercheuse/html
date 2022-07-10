@@ -154,30 +154,36 @@
     display: flex;
     flex-basis: 50%;
     max-width: 50%;
-    flex-direction: column;
+    width: 600px;
 }
 
-.details__inner {}
+.details__inner {
+    display: flex;
+    flex-basis: 100%;
+    flex-direction: column;
+    width: 570px;
+    max-width: 100%;
+}
 
 .contacts__title {
     color: #d62324;
     font-family: 'homemade apple';
-    font-size: 20px;
+    font-size: 26px;
     margin: 0;
     text-align: left;
-    letter-spacing: 0.5em;
+    letter-spacing: 1.3px;
+    font-weight: 400;
 }
 
 .contacts__subtitle {
+    display:block;
+    position:relative;
     color: #FFFFFF;
     font-family: 'Rajdhani', sans-serif;
-    font-size: 47px;
+    font-size: 56px;
+    font-weight: 700;
     text-align: left;
-    margin: 0;
-    grid-column-start: 1;
-    grid-row-start: 2;
-    height: 60px;
-    padding: 0 0 16px;
+    
 
 }
 
@@ -185,12 +191,11 @@
     content: "";
     width: 50px;
     height: 2px;
-    position: relative;
+    position: absolute;
     background-color: #d62324;
-    bottom: 45%;
+    bottom: 0;
     justify-content: flex-start;
-    margin-top: 20px;
-    display: block;
+    left:0;
 }
 
 p.contacts__introduction-phrase {
