@@ -117,17 +117,21 @@
 .contacts {
     padding: 100px 0 40px;
     background-color: #0a0c0d;
-    
+
 
 }
-.contacts__container{padding:0 40px;}
+
+.contacts__container {
+    padding: 0 40px;
+}
+
 .contacts__inner {
     display: flex;
     width: calc(100% + 30px);
     flex-wrap: wrap;
     margin: -30px -15px 0;
     background-color: #0a0c0d;
-    flex-direction:row;
+    flex-direction: row;
 }
 
 .contacts__details {
@@ -217,7 +221,7 @@ a {
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 address {
@@ -226,11 +230,11 @@ address {
 
 
 .contacts__map {
-    display:flex;
+    display: flex;
     height: 100%;
     width: 100%;
     margin-top: 20px;
-    cursor:grabbing;
+    cursor: grabbing;
 }
 
 .contacts__form {
@@ -238,22 +242,34 @@ address {
     margin-top: 30px;
     display: flex;
     flex-basis: 50%;
-    max-width: 50%;
-    background-color:rgb(30, 25, 23);
+    background-color: rgb(30, 25, 23);
+    
 }
 
 
-.form__inner{ display:block;
-    position:absolute;
+.form__inner {
+    display: flex;
+    position: relative;
+    justify-content: flex-start;
     margin: 0;
-    padding:0;
+    max-width: 100%;
+    min-width: 0px;
+    padding: 60px 100px;
+    position: relative;
 }
 
+.form {
+    display: block;
+    position: relative;
+    width: 100%;
+    line-height: 24px;
+}
 
 .form__user-name,
 .form__user-number,
 .form__user-email,
-.form__date-picker {
+.form__date-picker
+{
     display: block;
     border-style: solid;
     border-width: 2px;
@@ -261,31 +277,37 @@ address {
     background-color: rgb(30, 25, 23);
     color: #FFFFFF8A;
     font-size: 12px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     margin-top: 12px;
     padding: 20px 50px;
-    width:100%;
+    width: 100%;
     line-height: 15px;
+    text-align: left;
+    font-weight: 400;
 }
-
+.form__date-picker{display: flex;
+justify-content: space-between;
+align-items: center;
+color:rgba(255, 255, 255, 0.54);}
 .form__button {
+    display: inline-block;
+    position:absolute;
     background-color: #d62324;
     color: #FFFFFF;
     font-size: 12px;
-    font-family: 'Roboto' sans-serif;
-    margin: auto;
-
+    font-family: 'Roboto';
     border-style: solid;
     border-width: 2px;
-    display: block;
+    text-align: center;
+    border-color: transparent;
+    margin-top: 50px;
     padding: 20px 50px;
     width: 100%;
-    border-color: #d62324;
+    height:70px;
+    font-weight: 500;
 }
-
-svg {color:rgba(255, 255, 255, 0.54);
-    cursor: pointer;
-    display: flex;
-    z-index: 1;
-
+.form__img-calendar{height:19px;
+width:23px;
+;
+color:#FFFFFF;
 }
