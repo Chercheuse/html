@@ -171,11 +171,10 @@
     display: block;
     position: relative;
     color: var(--white);
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani';
     font-size: 56px;
     font-weight: 700;
     text-align: left;
-
 
 }
 
@@ -200,7 +199,7 @@ p.contacts__introduction-phrase {
 
 .contacts__text-address {
     color: var(--white);
-    font-family: 'Radjhani' sans-serif;
+    font-family: 'Radjhani';
     font-size: 23px;
     margin: 0 0 5px;
     padding: 8px 23px 8px 0;
@@ -208,7 +207,7 @@ p.contacts__introduction-phrase {
 
 .contacts__text-contact {
     color: var(--white);
-    font-family: 'Radjhani' sans-serif;
+    font-family: 'Radjhani';
     font-size: 23px;
     margin: 0 0 5px;
     padding: 8px 15px 0 0;
