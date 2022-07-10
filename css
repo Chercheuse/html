@@ -116,7 +116,7 @@
 
 .contacts {
     padding: 100px 0 40px;
-    background-color: #0a0c0d;
+    background-color: #16120f;
     display: block;
     position: relative;
     flex-basis: 100%;
@@ -176,14 +176,14 @@
 }
 
 .contacts__subtitle {
-    display:block;
-    position:relative;
+    display: block;
+    position: relative;
     color: #FFFFFF;
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
     text-align: left;
-    
+
 
 }
 
@@ -195,11 +195,11 @@
     background-color: #d62324;
     bottom: 0;
     justify-content: flex-start;
-    left:0;
+    left: 0;
 }
 
 p.contacts__introduction-phrase {
-    font-family: 'Roboto' sans-serif;
+    font-family: 'Roboto';
     font-size: 18px;
     text-align: left;
     color: #FFFFFF;
@@ -277,6 +277,12 @@ address {
     min-width: 0px;
     padding: 60px 100px;
     position: relative;
+    flex-basis: 100%;
+}
+
+.inner__background {
+    display: flex;
+    flex-basis: 100%;
 }
 
 .form {
@@ -332,6 +338,11 @@ address {
 .form__img-calendar {
     height: 19px;
     width: 23px;
-    ;
     color: #FFFFFF;
+}
+
+.form__button:hover {
+    background-color: #FFFFFF;
+    color: #0a0c0d;
+    cursor: pointer;
 }
