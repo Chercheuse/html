@@ -1,11 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-
-}
-
 .main__testimonials {
     background-color: rgb(241, 237, 225);
     width: 100%;
@@ -13,7 +5,7 @@
 }
 
 .testimonials__title {
-    color: #d62324;
+    color: var(--red);
     font-family: 'homemade apple';
     font-size: 26px;
     margin: 0;
@@ -38,7 +30,7 @@
     height: 2px;
     display: block;
     position: relative;
-    background-color: #d62324;
+    background-color: var(--red);
     bottom: 45%;
     left: 48%;
     margin-top: 20px;
@@ -102,16 +94,16 @@
 .date__pub {
     letter-spacing: .1em;
     font-weight: bold;
-    color: #0a0c0d;
+    color: var(--black);
 }
 
 .fa {
     text-decoration: none;
-    color: #0a0c0d;
+    color: var(--black);
 }
 
 .fa:hover {
-    color: #d62324;
+    color: var(--red);
 }
 
 .contacts {
@@ -166,7 +158,7 @@
 }
 
 .contacts__title {
-    color: #d62324;
+    color: var(--red);
     font-family: 'homemade apple';
     font-size: 26px;
     margin: 0;
@@ -178,7 +170,7 @@
 .contacts__subtitle {
     display: block;
     position: relative;
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Rajdhani', sans-serif;
     font-size: 56px;
     font-weight: 700;
@@ -192,7 +184,7 @@
     width: 50px;
     height: 2px;
     position: absolute;
-    background-color: #d62324;
+    background-color: var(--red);
     bottom: 0;
     justify-content: flex-start;
     left: 0;
@@ -202,12 +194,12 @@ p.contacts__introduction-phrase {
     font-family: 'Roboto';
     font-size: 18px;
     text-align: left;
-    color: #FFFFFF;
+    color: var(--white);
     padding: 25px 0;
 }
 
 .contacts__text-address {
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Radjhani' sans-serif;
     font-size: 23px;
     margin: 0 0 5px;
@@ -215,7 +207,7 @@ p.contacts__introduction-phrase {
 }
 
 .contacts__text-contact {
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Radjhani' sans-serif;
     font-size: 23px;
     margin: 0 0 5px;
@@ -230,7 +222,7 @@ a .contacts__link {
 }
 
 a {
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .contacts__link {
@@ -238,7 +230,7 @@ a {
 }
 
 .contacts__address {
-    color: #FFFFFF;
+    color: var(--white);
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: row;
@@ -322,8 +314,8 @@ address {
 .form__button {
     display: inline-block;
     position: absolute;
-    background-color: #d62324;
-    color: #FFFFFF;
+    background-color: var(--red);
+    color: var(--white);
     font-size: 12px;
     font-family: 'Roboto';
     border: 2px transparent solid;
@@ -338,11 +330,11 @@ address {
 .form__img-calendar {
     height: 19px;
     width: 23px;
-    color: #FFFFFF;
+    color: var(--white);
 }
 
 .form__button:hover {
-    background-color: #FFFFFF;
-    color: #0a0c0d;
+    background-color: var(--white);
+    color: var(--black);
     cursor: pointer;
 }
