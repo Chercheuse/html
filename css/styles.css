@@ -12,11 +12,6 @@
     padding-top: 40px;
 }
 
-.main__testimonials {
-    background-color: rgb(241, 237, 225);
-
-}
-
 
 .testimonials__title {
     color: red;
@@ -94,24 +89,42 @@
 
 
 .slideshow-container__exponent-name {
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Rajdhani';
     color: #d62324;
     text-align: center;
+    padding-top: 20px;
 }
 
+.slideshow-container__social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px 0 0 ;
+}
+
+.fa {
+    text-decoration: none;
+    color: black;
+    margin: 0 10px;
+}
+
+.fa:hover {
+    color: red;
+}
 
 .slideshow-container__exponent-feedback {
     letter-spacing: .05em;
     color: #707070;
     text-transform: none;
     text-align: center;
+    padding: 20px 0;
 }
 
 .slideshow-container__dots {
     display: inline-block;
     position: absolute;
     left: 47%;
-    top: 80%;
+    top: 90%;
 }
 
 .dot {
@@ -145,21 +158,7 @@
     text-align: center;
 }
 
-.slideshow-container__social-icons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-.fa {
-    text-decoration: none;
-    color: black;
-    margin: 0 5px;
-}
-
-.fa:hover {
-    color: red;
-}
 
 /*
 .main__testimonials {
